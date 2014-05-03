@@ -16,11 +16,11 @@ Graffeine.conf = {};
 
 Graffeine.conf.graphSettings = {
     width:               1200,  // width of the graph UI display
-    height:               800,  // height of the graph UI display
+    height:               1400,  // height of the graph UI display
     nodeLimit:             100,  // Max nodes to display in UI
-    circleRadius:          25,  // Radius of circles (nodes)
-    linkDistance:         200,  // Distance between circles (nodes)
-    charge:             -2200,  // node repel charge
+    circleRadius:          30,  // Radius of circles (nodes)
+    linkDistance:         70,  // Distance between circles (nodes)
+    charge:             -2000,  // node repel charge
     selectedClass: 'selected'   // css class for selected (clicked) nodes
 };
 

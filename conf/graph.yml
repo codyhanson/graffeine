@@ -6,14 +6,6 @@ graph:
         - value
         - name
         - title
-        - character
-        - actor
-        - thing
-        - planet
-        - part
-        - species
-        - props
-        - prop
 
     typeFields:
         - type
@@ -32,31 +24,34 @@ nodes:                              # nodes on the graph, sections are content o
             stroke: '#002636'       # color of the line around the svg circle
         label:
             fill: '#000000'         # font color of the text label for this node
-
-    org.neo4j.cineasts.domain.Movie:
-        icon: ''
-        style:
-            fill: '#FFFFFF'
-            stroke: '#000000'
-
-    org.neo4j.cineasts.domain.Person:
-        icon: ''
-        style:
-            fill: '#CCCCCC'
-
     word:
-        icon: ''                  # house icon
+        icon: 'W'                  # house icon
         style:
             fill: '#9b59b6'         # amethyst
 
     homophone:
-        icon: ''                  # person icon
+        icon: 'HO'                  # person icon
         style:
             fill: '#16a085'         # green sea
 
-    room:
+    hyphenation:
+        icon: 'HY'                  # person icon
         style:
             fill: '#f39c12'          # orange
+
+    partofspeech:
+        icon: 'POS'                 
+        style:
+            fill: '#d39c12'          
+
+    definition:
+        icon: 'DEF'                 
+        style:
+            fill: '#d32c82'          
+
+
+
+
 
 rels:                                # relationships in the graph
 
