@@ -2,6 +2,8 @@
 graph:
 
     nameFields:                     # neo4j fields to use as node 'name' in priority order
+        - word
+        - value
         - name
         - title
         - character
@@ -17,8 +19,8 @@ graph:
         - type
         - __type__                  # used in the cineasts example db on neo4j site
 
-    useNameAsType: true             # use a matched name from above as the 'type' field for styling
-    useCssStyle: true               # use CSS client styling instead of server side
+    useNameAsType: false # use a matched name from above as the 'type' field for styling
+    useCssStyle: false # use CSS client styling instead of server side
 
 nodes:                              # nodes on the graph, sections are content of type field (from above)
 
@@ -42,12 +44,12 @@ nodes:                              # nodes on the graph, sections are content o
         style:
             fill: '#CCCCCC'
 
-    home:
+    word:
         icon: ''                  # house icon
         style:
             fill: '#9b59b6'         # amethyst
 
-    person:
+    homophone:
         icon: ''                  # person icon
         style:
             fill: '#16a085'         # green sea
